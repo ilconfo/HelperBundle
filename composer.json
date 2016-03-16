@@ -1,0 +1,30 @@
+{
+    "name" : "offtune/helperbundle",
+    "description" : "A helper bundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "demo",
+        "email" : "info@offtune.it"
+    }],
+    "keywords" : [
+        "demo bundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "OffTune\\HelperBundle" : ""
+        }
+    },
+    "target-dir" : "OffTune/HelperBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "some_version-dev"
+        }
+    }
+}
