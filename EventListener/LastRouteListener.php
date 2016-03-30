@@ -40,7 +40,7 @@ class LastRouteListener
             return;
         }
 
-        $session->set('pre_last_route', $session->get('last_route', []));
+        $session->set('pre_last_route', $session->get('last_route', array()));
         $session->set('last_route', $thisRoute);
         $session->set('this_route', $routeData);
     }
