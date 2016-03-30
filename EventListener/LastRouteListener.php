@@ -32,14 +32,13 @@ class LastRouteListener
         if (strpos($routeName, '_update') !== false)
         	return;
 
-        $routeData = ['name' => $routeName, 'params' => $routeParams];
+        $routeData = array('name' => $routeName, 'params' => $routeParams);
 
         // Do not save same matched route twice
-        $thisRoute = $session->get('this_route', []);
+        $thisRoute = $session->get('this_route', array());
         if ($thisRoute == $routeData) {
             return;
         }
-
 
         $session->set('pre_last_route', $session->get('last_route', []));
         $session->set('last_route', $thisRoute);
