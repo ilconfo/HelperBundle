@@ -16,10 +16,10 @@
     },
     "autoload" : {
         "psr-0" : {
-            "OffTune\\HelperBundle" : ""
+            "Offtune\\HelperBundle" : ""
         }
     },
-    "target-dir" : "OffTune/HelperBundle",
+    "target-dir" : "Offtune/HelperBundle",
     "repositories" : [{
     }],
     "extra" : {
