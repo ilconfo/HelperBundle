@@ -1,8 +1,11 @@
 services:
-#    offtune_helper.example:
-#        class: Offtune\HelperBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
     offtune.last_route_event_listener:
         class: Offtune\HelperBundle\EventListener\LastRouteListener
         tags:
             - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest, priority: 30 }
+
+    session_entity_manager:
+        class: Offtune\HelperBundle\Services\SessionEntityManager
+        arguments:
+            - "@request_stack"
+            - "@logger"
